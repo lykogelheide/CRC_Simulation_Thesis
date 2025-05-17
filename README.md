@@ -5,14 +5,14 @@
 This repository contains the code, data-generating mechanisms, analysis scripts, and outcome for the simulation study conducted as part of the master's thesis titled:
 **"Comparing machine learning and statistical models in capture-recapture estimators: a simulation study on bias and precision"**  
 Author: Luca Y. Kogelheide  
-Supervisors: Dr. Joep Burger, Dr. Jonas Klingwort, Prof. Dr. Peter Lugtig   
-Faculty: Methodology and Statistics for the Behavioural, Biomedical and Social Sciences – Utrecht University   
+Supervisors: Dr. Joep Burger (CBS), Dr. Jonas Klingwort (CBS), Prof. Dr. Peter Lugtig (UU)   
+Faculty: Methodology and Statistics for the Behavioural, Biomedical and Social Sciences – Utrecht University; in cooperating with Statistics Netherlands (CBS)  
 Date: May 11, 2025  
 Ethics Approval: FETC (File No. 24-2068)
 
 ## Repository Structure
 
-.
+.  
 |--- data/ # Scripts to simulate population and sample scenarios  
 |--- analysis/ # Hyperparameter tuning, analysis, and visualization  
 |--- output/ # Output of the simulations (plots, desciptives)  
@@ -74,6 +74,6 @@ Results (plots and summary statistics) will be written to the output/ folder.
 ## Contact
 
 For questions or clarification:  
-**Luca Y. Kogelheide**. 
+**Luca Y. Kogelheide**  
 **Email**: l.y.kogelheide@uu.nl  
 **GitHub**: https://github.com/lykogelheide  
