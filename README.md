@@ -4,22 +4,22 @@
 
 This repository contains the code, data-generating mechanisms, analysis scripts, and outcome for the simulation study conducted as part of the master's thesis titled:
 **"Comparing machine learning and statistical models in capture-recapture estimators: a simulation study on bias and precision"**  
-Author: Luca Y. Kogelheide 
-Supervisors: Dr. Joep Burger, Dr. Jonas Klingwort, Prof. Dr. Peter Lugtig  
-Faculty: Methodology and Statistics for the Behavioural, Biomedical and Social Sciences – Utrecht University  
+Author: Luca Y. Kogelheide  
+Supervisors: Dr. Joep Burger, Dr. Jonas Klingwort, Prof. Dr. Peter Lugtig   
+Faculty: Methodology and Statistics for the Behavioural, Biomedical and Social Sciences – Utrecht University   
 Date: May 11, 2025  
 Ethics Approval: FETC (File No. 24-2068)
 
 ## Repository Structure
 
 .
-|--- data/ # Scripts to simulate population and sample scenarios
-|--- analysis/ # Hyperparameter tuning, analysis, and visualization
-|--- output/ # Output of the simulations (plots, desciptives)
-|--- README.md # This file
-|--- requirements.txt # R version and packages used
-|--- LICENSE # MIT License
-|--- simulation_project.Rproj # Rproject
+|--- data/ # Scripts to simulate population and sample scenarios  
+|--- analysis/ # Hyperparameter tuning, analysis, and visualization  
+|--- output/ # Output of the simulations (plots, desciptives)  
+|--- README.md # This file  
+|--- requirements.txt # R version and packages used  
+|--- LICENSE # MIT License  
+|--- simulation_project.Rproj # Rproject  
 
 ## Study Design
 
@@ -42,38 +42,38 @@ and sensor overdetection (false-positives), which are assessed across 100 iterat
 ## Reproducibility Instructions (Execution Order)
 
 ### 1. **Simulate the Population**
-source("data/03_simulation_functions.R")
-source("data/01_generate_population.R")
+source("data/03_simulation_functions.R")  
+source("data/01_generate_population.R")  
 
 ### 2. **Simulate the first simulation scenario**
-First, I simulated the baseline scenario (i.e. no measurement error included). The first iteration will be used for hyperparameter optimization.
-source("data/02_generate_sample_scenarios.R")
+First, I simulated the baseline scenario (i.e. no measurement error included). The first iteration will be used for hyperparameter optimization.  
+source("data/02_generate_sample_scenarios.R")  
 
 ### 3. **Hyperparameter optimization**
-source("analysis/02_analysis_functions.R")
-source("analysis/01_hyperparameter_selection.R")   # XGBoost tuning
+source("analysis/02_analysis_functions.R")  
+source("analysis/01_hyperparameter_selection.R")   # XGBoost tuning  
 
 ### 4. **Analysis**
 source("analysis/03_analysis.R")  
 
 ### 5. **Finish simulation**
-Repeat steps 2 and 4 for each of the 48 simulation scenarios
+Repeat steps 2 and 4 for each of the 48 simulation scenarios  
 
 ### 6. **Visualize results**
 source("analysis/04_visualization.R")  
 
 ### 7. **Inspect output**
-Results (plots and summary statistics) will be written to the output/ folder.
+Results (plots and summary statistics) will be written to the output/ folder.  
 
 ## Ethics, Privacy, and Access
 
-- **Ethical Approval**: Approved by the FETC (Utrecht University), protocol no. 24-2068.
-- **Privacy**: No personal or sensitive data is used; all data are synthetic.
-- **Access**: Repository is publicly available (please read/note MIT license).
+- **Ethical Approval**: Approved by the FETC (Utrecht University), protocol no. 24-2068.  
+- **Privacy**: No personal or sensitive data is used; all data are synthetic.  
+- **Access**: Repository is publicly available (please read/note MIT license).  
 
 ## Contact
 
-For questions or clarification:
-**Luca Y. Kogelheide**
-**Email**: l.y.kogelheide@uu.nl
-**GitHub**: https://github.com/lykogelheide
+For questions or clarification:  
+**Luca Y. Kogelheide**. 
+**Email**: l.y.kogelheide@uu.nl  
+**GitHub**: https://github.com/lykogelheide  
