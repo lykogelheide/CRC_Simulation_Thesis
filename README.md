@@ -13,8 +13,9 @@ Ethics Approval: FETC (File No. 24-2068)
 ## Repository Structure
 
 .  
-|--- data/ # Scripts to simulate population and sample scenarios  
-|--- analysis/ # Hyperparameter tuning, analysis, and visualization  
+|--- code/ # Folder containing scripts on generating the population, simulation scenario, and anaysis.
+    |--- 01_simulation/ # Scripts to simulate population and sample scenarios  
+    |--- 02_Analysis/ # Hyperparameter tuning, analysis, and visualization  
 |--- output/ # Output of the simulations (plots, desciptives)  
 |--- README.md # This file  
 |--- requirements.txt # R version and packages used  
@@ -47,20 +48,20 @@ source("data/01_generate_population.R")
 
 ### 2. **Simulate the first simulation scenario**
 First, I simulated the baseline scenario (i.e. no measurement error included). The first iteration will be used for hyperparameter optimization.  
-source("data/02_generate_sample_scenarios.R")  
+source("code/01_Simulation/02_generate_sample_scenarios.R")  
 
 ### 3. **Hyperparameter optimization**
-source("analysis/02_analysis_functions.R")  
-source("analysis/01_hyperparameter_selection.R")   # XGBoost tuning  
+source("code/02_Analysis/02_analysis_functions.R")  
+source("code/02_Analysis/01_hyperparameter_selection.R")   # XGBoost tuning  
 
 ### 4. **Analysis**
-source("analysis/03_analysis.R")  
+source("02_Analysis/03_analysis.R")  
 
 ### 5. **Finish simulation**
 Repeat steps 2 and 4 for each of the 48 simulation scenarios  
 
 ### 6. **Visualize results**
-source("analysis/04_visualization.R")  
+source("02_Analysis/04_visualization.R")  
 
 ### 7. **Inspect output**
 Results (plots and summary statistics) will be written to the output/ folder.  
