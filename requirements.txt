@@ -5,7 +5,11 @@ R (4.4.0)
 
 # Packages
 tidyverse (2.2.0)
+purrr (1.0.2)
+parallel (4.4.0)
 ggplot2 (3.5.1)
 xgboost (1.7.7.1)
-MASS ()
-gridExtra ()
+MASS (7.3-60.2)
+ggtext (0.1.2)
+showtext (0.9-7)
+sysfonts (0.8.9)
