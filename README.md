@@ -27,7 +27,7 @@ Ethics Approval: FETC (File No. 24-2068)
 - **Objective**: This study compares a single source survey estimators with capture-recapture (CRC) estimators, the Lincoln-Petersen estimator with the model-based Huggins
 estimators (both CRC estimators), and a logistic regression approach with a XGBoost-algorithm modeling approach within the Huggins estimator, with respect to bias and precision, under 
 varying levels of measurement error.
-- **Design**: Simulating a synthetic population of 10.000 units over 91 days. First capture occassion represent a survey of 2000 units over a period of one time. The second capture
+- **Design**: Simulating a synthetic population of 10.000 units over 91 days. First capture occassion represent a survey of 2000 units over a period of one week. The second capture
 occassion represents sensor data of each unit in the population (census). There are 48 combinations of survey underreporting (false-negatives), sensor underdetection (false-negatives), 
 and sensor overdetection (false-positives), which are assessed across 100 iterations.
 - **Evaluation Metrics**: Relative bias (RB); coefficient of variation (CV); relative root mean squared error (RRMSE).
@@ -43,25 +43,25 @@ and sensor overdetection (false-positives), which are assessed across 100 iterat
 ## Reproducibility Instructions (Execution Order)
 
 ### 1. **Simulate the Population**
-source("data/03_simulation_functions.R")  
-source("data/01_generate_population.R")  
+source("code/01_Simulation/00_simulation_functions.R")  
+source("code/01_Simulation/01_generate_population.R")  
 
 ### 2. **Simulate the first simulation scenario**
-First, I simulated the baseline scenario (i.e. no measurement error included). The first iteration will be used for hyperparameter optimization.  
-source("code/01_Simulation/02_generate_sample_scenarios.R")  
+First, I simulated the baseline scenario (i.e. no measurement error included). The first iteration will be used for hyperparameter optimization:  
+source("code/01_Simulation/02_sample_scenarios.R")  
 
 ### 3. **Hyperparameter optimization**
-source("code/02_Analysis/02_analysis_functions.R")  
+source("code/02_Analysis/00_analysis_functions.R")  
 source("code/02_Analysis/01_hyperparameter_selection.R")   # XGBoost tuning  
 
 ### 4. **Analysis**
-source("02_Analysis/03_analysis.R")  
+source("02_Analysis/02_analysis.R")  
 
 ### 5. **Finish simulation**
 Repeat steps 2 and 4 for each of the 48 simulation scenarios  
 
 ### 6. **Visualize results**
-source("02_Analysis/04_visualization.R")  
+source("02_Analysis/03_visualization.R")  
 
 ### 7. **Inspect output**
 Results (plots and summary statistics) will be written to the output/ folder.  
