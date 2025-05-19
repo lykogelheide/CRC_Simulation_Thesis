@@ -42,7 +42,7 @@ p_RRMSE_other <- ggplot(Quality_fn_other, aes(x = fn_svy, y = RRMSE, group = Est
     legend.box = "horizontal"
   )
 print(p_RRMSE_other)
-ggsave("plots/RRMSE_output_other.eps", plot = p_RRMSE_other, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
+ggsave("output/RRMSE_output_other.eps", plot = p_RRMSE_other, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
 
 p_RRMSE_09 <- ggplot(Quality_fn_09, aes(x = fn_svy, y = RRMSE, group = Estimator, color = Estimator)) +
   geom_line() +
@@ -61,7 +61,7 @@ p_RRMSE_09 <- ggplot(Quality_fn_09, aes(x = fn_svy, y = RRMSE, group = Estimator
     legend.box = "horizontal"
   )
 print(p_RRMSE_09)
-ggsave("plots/RRMSE_output_09.eps", plot = p_RRMSE_09, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
+ggsave("output/RRMSE_output_09.eps", plot = p_RRMSE_09, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
 
 
 p_RB_other <- ggplot(Quality_fn_other, aes(x = fn_svy, y = RB, group = Estimator, color = Estimator)) +
@@ -81,7 +81,7 @@ p_RB_other <- ggplot(Quality_fn_other, aes(x = fn_svy, y = RB, group = Estimator
     legend.box = "horizontal"
   )
 print(p_RB_other)
-ggsave("plots/RB_output_other.eps", plot = p_RB_other, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
+ggsave("output/RB_output_other.eps", plot = p_RB_other, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
 
 p_RB_09 <- ggplot(Quality_fn_09, aes(x = fn_svy, y = RB, group = Estimator, color = Estimator)) +
   geom_line() +
@@ -100,7 +100,7 @@ p_RB_09 <- ggplot(Quality_fn_09, aes(x = fn_svy, y = RB, group = Estimator, colo
     legend.box = "horizontal"
   )
 print(p_RB_09)
-ggsave("plots/RB_output_09.eps", plot = p_RB_09, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
+ggsave("output/RB_output_09.eps", plot = p_RB_09, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
 
 
 p_CV_other <- ggplot(Quality_fn_other, aes(x = fn_svy, y = CV, group = Estimator, color = Estimator)) +
@@ -120,7 +120,7 @@ p_CV_other <- ggplot(Quality_fn_other, aes(x = fn_svy, y = CV, group = Estimator
     legend.box = "horizontal"
   )
 print(p_CV_other)
-ggsave("plots/CV_output_other.eps", plot = p_CV_other, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
+ggsave("output/CV_output_other.eps", plot = p_CV_other, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
 
 
 p_CV_09 <- ggplot(Quality_fn_09, aes(x = fn_svy, y = CV, group = Estimator, color = Estimator)) +
@@ -140,4 +140,4 @@ p_CV_09 <- ggplot(Quality_fn_09, aes(x = fn_svy, y = CV, group = Estimator, colo
     legend.box = "horizontal"
   )
 print(p_CV_09)
-ggsave("plots/CV_output_09.eps", plot = p_CV_09, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
+ggsave("output/CV_output_09.eps", plot = p_CV_09, width = 6.65625, height = 3.520833, units = "in", dpi = 96)
