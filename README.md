@@ -13,14 +13,14 @@ Ethics Approval: FETC (File No. 24-2068)
 ## Repository Structure
 
 .  
-|--- code/ # Folder containing scripts on generating the population, simulation scenario, and anaysis.
-    |--- 01_simulation/ # Scripts to simulate population and sample scenarios  
-    |--- 02_Analysis/ # Hyperparameter tuning, analysis, and visualization  
+|--- code/ # Folder containing scripts on generating the population, simulation scenario, and anaysis.  
+    |--- code/01_simulation/ # Scripts to simulate population and sample scenarios  
+    |--- code/02_Analysis/ # Hyperparameter tuning, analysis, and visualization  
 |--- output/ # Output of the simulations (plots, desciptives)  
 |--- README.md # This file  
 |--- requirements.txt # R version and packages used  
 |--- LICENSE # MIT License  
-|--- simulation_project.Rproj # Rproject  
+|--- CRC_Thesis.Rproj # Rproject  
 
 ## Study Design
 
