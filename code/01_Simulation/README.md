@@ -13,4 +13,5 @@ This folder contains all scripts necessary to simulate the population and sample
 
 ### Usage notes
 
-These scripts are designed to be run in the above order, as each script depends on the objects created in the previous one. All variables are generated in memory; no raw datasets are saved.
+These scripts are designed to be run in the above order, as each script depends on the objects created in the previous one. There is no need to run the `00_simulation_functions.R´, since the other scripts can call this script themselves.  
+All variables are generated in memory; no raw datasets are saved.
