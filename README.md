@@ -6,7 +6,7 @@ This repository contains the code, data-generating mechanisms, analysis scripts,
 **"Comparing machine learning and statistical models in capture-recapture estimators: a simulation study on bias and precision"**  
 Author: Luca Y. Kogelheide  
 Supervisors: Dr. Joep Burger (CBS), Dr. Jonas Klingwort (CBS), Prof. Dr. Peter Lugtig (UU)   
-Faculty: Methodology and Statistics for the Behavioural, Biomedical and Social Sciences – Utrecht University; in cooperating with Statistics Netherlands (CBS)  
+Faculty: Methodology and Statistics for the Behavioural, Biomedical and Social Sciences – Utrecht University; in cooperation with Statistics Netherlands (CBS)  
 Date: May 11, 2025  
 Ethics Approval: FETC (File No. 24-2068)
 
